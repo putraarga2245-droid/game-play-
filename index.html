@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Ular Layar Lebar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- KARTU 1: DAFTAR AKUN -->
+  <div id="untuk_daftar" class="kartu">
+    <h3>DAFTAR</h3>
+    <br>
+    <input id="input_01" placeholder="email_anda">
+    <input id="input_02" placeholder="sandi_anda">
+    <br><br>
+    <button id="button_01">daftar</button>
+    <p class="teks_pindah" id="pindah_ke_login">Sudah punya akun? Login</p>
+  </div>
+
+  <!-- KARTU 2: LOGIN AKUN -->
+  <div id="untuk_login" class="kartu">
+    <h3>LOGIN</h3>
+    <br>
+    <input id="input_03" placeholder="email_anda">
+    <input id="input_04" placeholder="sandi_anda">
+    <br><br>
+    <button id="button_02">login</button>
+    <p class="teks_pindah" id="pindah_ke_daftar">Belum punya akun? Daftar</p>
+  </div>
+
+  <!-- KARTU 3: WADAH KATA "MASUK" -->
+  <div id="wadah_text" class="kartu">
+    <textarea id="text_01" placeholder="ketik kata masuk"></textarea>
+    <button id="button_03" style="width:50px">ok</button>
+    <p>masukin kode nya sih </p>
+    <b>"masuk"</b>
+  </div>
+
+  <!-- KARTU 4: RUANG GAME ULAR (Diperlebar) -->
+  <div id="ruang_game" class="kartu kartu_game">
+    <div id="skor_01">0</div>
+    
+    <!-- Arena Layar Lebar: Lebar 450px, Tinggi 300px -->
+    <div id="arena_game">
+      <span class="badan" id="kepala_01"></span>
+      <div id="umpan_01"></div>
+    </div>
+
+    <br>
+    <div class="wadah_kontrol">
+      <button id="button_atas" style="width: 70px">atas</button>
+      <div class="baris_tengah">
+        <button id="button_kiri" style="width: 70px">kiri</button>
+        <button id="button_bawah" style="width: 70px">bawah</button>
+        <button id="button_kanan" style="width: 70px">kanan</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

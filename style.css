@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.kartu {
+  width: 350px;
+  height: 440px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Khusus Kartu Game dibuat lebih lebar & tinggi agar leluasa */
+.kartu_game {
+  width: 500px !important;
+  height: 480px !important;
+}
+
+#untuk_daftar {
+  z-index: 3;
+  display: flex;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+}
+
+#untuk_login {
+  z-index: 2;
+  display: none;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+}
+
+#wadah_text {
+  z-index: 1;
+  display: none;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+#ruang_game {
+  z-index: 0;
+  display: none;
+  background-color: #1e293b;
+  color: white;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.95);
+  outline: none;
+}
+
+#text_01 {
+  width: 100%;
+  height: 90px;
+  font-size: 18px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+  text-align: center;
+}
+
+#wadah_text p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #475569;
+  font-weight: 600;
+}
+
+.teks_pindah {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #fde047;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+button {
+  height: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #1e293b;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#button_01, #button_02, #button_03 {
+  width: 100% !important;
+}
+
+/* Arena Layar Lebar: 450px x 300px */
+#arena_game {
+  width: 450px;
+  height: 250px;
+  background-color: #0f172a;
+  border: 3px solid #38bdf8;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#kepala_01 {
+  width: 50px;
+  height: 50px;
+  background-color: #38bdf8;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 5;
+}
+
+.badan {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-color: #fb7185;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 4;
+}
+
+#umpan_01 {
+  width: 50px;
+  height: 50px;
+  background-color: #4ade80;
+  border-radius: 50%;
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  z-index: 3;
+}
+
+#skor_01 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #facc15;
+  background-color: #0f172a;
+  padding: 4px 20px;
+  border-radius: 15px;
+  border: 1px solid #334155;
+}
+
+.wadah_kontrol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.baris_tengah {
+  display: flex;
+  gap: 4px;
+}
+
+.wadah_kontrol button {
+  background-color: #334155;
+  font-size: 12px;
+}
